@@ -68,21 +68,22 @@
 					</a>
 				</p>
 				<nav role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+					<?php $page_id = get_the_ID() ?>
 					<ul class="d-lg-flex d-none justify-content-between align-items-center m-0">
 						<li class="mr-5 d-none d-xl-block">
-							<a class="mb-0" href="#TELEMEDICINA">Telemediciona</a>
+							<a class="mb-0" href="<?= $page_id == 5 ? "#TELEMEDICINA" : home_url() . "#TELEMEDICINA" ?>">Telemediciona</a>
 						</li>
 						<li class="mr-5 d-none d-xl-block">
-							<a class="mb-0" href="#SERVICOS">Serviços</a>
+							<a class="mb-0" href="<?= $page_id == 5 ? "#SERVICOS" : home_url() . "#SERVICOS" ?>">Serviços</a>
 						</li>
 						<li class="mr-5 d-none d-xl-block">
-							<a class="mb-0" href="#DEPOIMENTOS">Depoimentos</a>
+							<a class="mb-0" href="<?= $page_id == 5 ? "#DEPOIMENTOS" : home_url() . "#DEPOIMENTOS" ?>">Depoimentos</a>
 						</li>
 						<li class="mr-5 d-none d-xl-block">
-							<a class="mb-0" href="#PLANOS">Planos</a>
+							<a class="mb-0" href="<?= $page_id == 5 ? "#PLANOS" : home_url() . "#PLANOS" ?>">Planos</a>
 						</li>
 						<li class="mr-5 d-none d-xl-block">
-							<a class="mb-0" href="#SAIBAMAIS">Saiba Mais</a>
+							<a class="mb-0" href="<?= $page_id == 5 ? "#SAIBAMAIS" : home_url() . "#SAIBAMAIS" ?>">Saiba Mais</a>
 						</li>
 						<li class="mr-5 d-none d-xl-block">
 							<a class="mb-0" href="<?= home_url(); ?>/quem-somos">Quem Somos</a>
@@ -96,22 +97,22 @@
 			<nav id='menu-mobile' class="d-none" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
 				<ul class="">
 					<li class="mb-3 d-flex">
-						<a class="text-left" href="#TELEMEDICINA">Telemediciona</a>
+						<a class="text-left" href="<?= $page_id == 5 ? "#TELEMEDICINA" : home_url() . "#TELEMEDICINA" ?>">Telemediciona</a>
 					</li>
 					<li class="mb-3 d-flex">
-						<a class="text-left" href="#SERVIÇOS">Serviços</a>
+						<a class="text-left" href="<?= $page_id == 5 ? "#SERVICOS" : home_url() . "#SERVICOS" ?>">Serviços</a>
 					</li>
 					<li class="mb-3 d-flex">
-						<a class="text-left" href="#DEPOIMENTOS">Depoimentos</a>
+						<a class="text-left" href="<?= $page_id == 5 ? "#DEPOIMENTOS" : home_url() . "#DEPOIMENTOS" ?>">Depoimentos</a>
 					</li>
 					<li class="mb-3 d-flex">
-						<a class="text-left" href="#PLANOS">Planos</a>
+						<a class="text-left" href="<?= $page_id == 5 ? "#PLANOS" : home_url() . "#PLANOS" ?>">Planos</a>
 					</li>
 					<li class="mb-3 d-flex">
-						<a class="text-left" href="#SAIBAMAIS">Saiba Mais</a>
+						<a class="text-left" href="<?= $page_id == 5 ? "#SAIBAMAIS" : home_url() . "#SAIBAMAIS" ?>">Saiba Mais</a>
 					</li>
 					<li class="mb-3 d-flex">
-						<a class="text-left"  href="<?= home_url(); ?>/quem-somos">Quem Somos</a>
+						<a class="text-left" href="<?= home_url(); ?>/quem-somos">Quem Somos</a>
 					</li>
 					<li class="mb-3 d-flex">
 						<a class="text-left" href="<?php echo home_url(); ?>/login">Login</a>

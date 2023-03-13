@@ -3,4 +3,4 @@
  Template Name: Login
 */
 
-header("Location: https://ativacao.rapidoc.tech/login");
+header("Location: https://divinamed.rapidoc.tech/login");

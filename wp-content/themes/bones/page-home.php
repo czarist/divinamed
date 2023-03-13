@@ -57,15 +57,17 @@ $image = get_the_post_thumbnail_url(get_the_ID(), 'full');
 
 								</div>
 								<div class="mt-5 pt-5 pb-5">
-									<div class="row ">
-										<div class="col-12 mt-5">
-											<div class="row">
-												<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-12 col-xl-6 d-flex justify-content-center align-items-center">
-													<img src="<?= get_field('imagem_app', 5) ?>" width="400" alt="phone">
-												</div>
-												<div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="text-app" class="col-12 col-xl-6 p-5 text-xl-left  d-flex justify-content-center align-items-center">
-													<div>
-														<?= get_field('texto_app', 5) ?>
+									<div class="container-fluid">
+										<div class="row ">
+											<div class="col-12 mt-5">
+												<div class="row">
+													<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-12 col-xl-6 d-flex justify-content-center align-items-center">
+														<img src="<?= get_field('imagem_app', 5) ?>" width="400" alt="phone">
+													</div>
+													<div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="text-app" class="col-12 col-xl-6 p-5 text-xl-left  d-flex justify-content-center align-items-center">
+														<div>
+															<?= get_field('texto_app', 5) ?>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -75,7 +77,7 @@ $image = get_the_post_thumbnail_url(get_the_ID(), 'full');
 								<div id="TELEMEDICINA" class="row mw-100 ml-0 mr-0 items-container" style="background: #233D69;">
 									<div class="col-12 col-xl-6 d-flex justify-content-center align-items-center">
 										<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="row justify-content-start">
-											<div class="col-12 text-white ml-5">
+											<div class="col-12 text-white ml-0 ml-xl-5">
 												<?= get_field('texto_itens', 5) ?>
 												<?php
 												if (have_rows('itens', 5)) :

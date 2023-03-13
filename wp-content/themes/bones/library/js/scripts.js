@@ -9,9 +9,9 @@ function updateViewportDimensions() {
 }
 var viewport = updateViewportDimensions();
 
-var waitForFinalEvent = (function() {
+var waitForFinalEvent = (function () {
     var timers = {};
-    return function(callback, ms, uniqueId) {
+    return function (callback, ms, uniqueId) {
         if (!uniqueId) { uniqueId = "Don't call this twice without a uniqueId"; }
         if (timers[uniqueId]) { clearTimeout(timers[uniqueId]); }
         timers[uniqueId] = setTimeout(callback, ms);
@@ -23,7 +23,7 @@ var timeToWaitForLast = 100;
 function loadGravatars() {
     viewport = updateViewportDimensions();
     if (viewport.width >= 768) {
-        jQuery('.comment img[data-gravatar]').each(function() {
+        jQuery('.comment img[data-gravatar]').each(function () {
             jQuery(this).attr('src', jQuery(this).attr('data-gravatar'));
         });
     }
@@ -33,39 +33,16 @@ const home_url = document.getElementById('home_url').value;
 const get_template_directory_uri = document.getElementById('get_template_directory_uri').value;
 
 
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
 
     AOS.init({
-        disable: function() {
+        disable: function () {
             var maxWidth = 800;
             return window.innerWidth < maxWidth;
         },
     });
 
-    $('a[href^="#"]').on("click", function(e) {
-        e.preventDefault();
-        var id = $(this).attr("href"),
-            targetOffset = $(id).offset().top;
-
-        $("html, body").animate({
-                scrollTop: targetOffset - 100,
-            },
-            500
-        );
-    });
-
-    // open menu
-    document.getElementById("open-menu").onclick = function openmenu() {
-        document.getElementById("close-menu").classList.remove("d-none");
-        document.getElementById("close-menu").classList.add("d-flex");
-        document.getElementById("open-menu").classList.add("d-none");
-        document.getElementById("open-menu").classList.remove("d-flex");
-        document.getElementById("menu-mobile").classList.remove("d-none");
-        document.getElementById("menu-mobile").classList.add("d-flex");
-    };
-
-    // close menu
-    document.getElementById("close-menu").onclick = function closemenu() {
+    function closemenu() {
         document.getElementById("open-menu").classList.remove("d-none");
         document.getElementById("open-menu").classList.add("d-flex");
         document.getElementById("close-menu").classList.add("d-none");
@@ -74,7 +51,38 @@ jQuery(document).ready(function($) {
         document.getElementById("menu-mobile").classList.remove("d-flex");
     };
 
-    window.onload = function() {
+    function openmenu() {
+        document.getElementById("close-menu").classList.remove("d-none");
+        document.getElementById("close-menu").classList.add("d-flex");
+        document.getElementById("open-menu").classList.add("d-none");
+        document.getElementById("open-menu").classList.remove("d-flex");
+        document.getElementById("menu-mobile").classList.remove("d-none");
+        document.getElementById("menu-mobile").classList.add("d-flex");
+    };
+
+    // open menu
+    document.getElementById("open-menu").onclick = function () {
+        openmenu();
+    }
+
+    // close menu
+    document.getElementById("close-menu").onclick = function () {
+        closemenu();
+    }
+
+    $('a[href^="#"]').on("click", function (e) {
+        e.preventDefault();
+        var id = $(this).attr("href"),
+            targetOffset = $(id).offset().top;
+
+        $("html, body").animate({
+            scrollTop: targetOffset - 100,
+        },
+            500
+        );
+        closemenu();
+    });
+    window.onload = function () {
 
         // mata load da página
         let timeout;

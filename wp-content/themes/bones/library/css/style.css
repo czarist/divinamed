@@ -2499,6 +2499,10 @@ form#form-contato textarea {
 /*Ipad*/
 
 @media only screen and (max-width: 1024px) {
+    div#TELEMEDICINA h1 {
+        font-size: 19px;
+    }
+
     .items-container {
         min-height: 1121px;
     }
@@ -2520,7 +2524,7 @@ form#form-contato textarea {
     }
 
     #header {
-        background-color: #000 !important;
+        background-color: #233D69 !important;
         min-height: 75px !important;
     }
 
