@@ -9,7 +9,7 @@ $image = get_the_post_thumbnail_url(get_the_ID(), 'full');
 	<section id="banners" class="banner-top fx fx-center position-relative" style="background-image: url('<?= $image ?>')">
 		<div class="white-filter"></div>
 		<div class="container">
-			<div class="row justify-content-xl-end justify-content-center">
+			<div class="row justify-content-xl-start justify-content-center">
 				<div class="col-xl-6 col-12">
 					<?= the_content() ?>
 				</div>

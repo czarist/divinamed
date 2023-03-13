@@ -8,7 +8,7 @@
 				<img class="mb-5" src="<?php echo get_template_directory_uri(); ?>/library/images/logo.svg" alt="logoFooter">
 				<p class="d-flex">
 					<span class="text-dark">
-						© <?php echo date("Y"); ?>.Ativação Telemedicina. Todos os direitos reservados.
+						© <?php echo date("Y"); ?>. DivinaMed. Todos os direitos reservados.
 						<a href="https://c5w.com.br/" target="_blank">
 							<img src="<?php echo get_template_directory_uri(); ?>/library/images/c5w.png" style="position: relative;top: -2px;" height="15" width="15">
 						</a>

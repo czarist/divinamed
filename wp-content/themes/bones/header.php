@@ -70,22 +70,25 @@
 				<nav role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
 					<ul class="d-lg-flex d-none justify-content-between align-items-center m-0">
 						<li class="mr-5 d-none d-xl-block">
-							<a class="mb-0" href="#TELEMEDICINA">TELEMEDICINA</a>
+							<a class="mb-0" href="#TELEMEDICINA">Telemediciona</a>
 						</li>
 						<li class="mr-5 d-none d-xl-block">
-							<a class="mb-0" href="#SERVICOS">SERVIÇOS</a>
+							<a class="mb-0" href="#SERVICOS">Serviços</a>
 						</li>
 						<li class="mr-5 d-none d-xl-block">
-							<a class="mb-0" href="#DEPOIMENTOS">DEPOIMENTOS</a>
+							<a class="mb-0" href="#DEPOIMENTOS">Depoimentos</a>
 						</li>
 						<li class="mr-5 d-none d-xl-block">
-							<a class="mb-0" href="#PLANOS">PLANOS</a>
+							<a class="mb-0" href="#PLANOS">Planos</a>
 						</li>
 						<li class="mr-5 d-none d-xl-block">
-							<a class="mb-0" href="#SAIBAMAIS">SAIBA MAIS</a>
+							<a class="mb-0" href="#SAIBAMAIS">Saiba Mais</a>
 						</li>
 						<li class="mr-5 d-none d-xl-block">
-							<a class="mb-0" href="<?php echo home_url(); ?>/login">PORTAL DE TELEMEDICINA</a>
+							<a class="mb-0" href="<?= home_url(); ?>/quem-somos">Quem Somos</a>
+						</li>
+						<li class="mr-5 d-none d-xl-block">
+							<a class="mb-0" href="<?= home_url(); ?>/login">Login</a>
 						</li>
 					</ul>
 				</nav>
@@ -93,22 +96,25 @@
 			<nav id='menu-mobile' class="d-none" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
 				<ul class="">
 					<li class="mb-3 d-flex">
-						<a class="text-left" href="#TELEMEDICINA">TELEMEDICINA</a>
+						<a class="text-left" href="#TELEMEDICINA">Telemediciona</a>
 					</li>
 					<li class="mb-3 d-flex">
-						<a class="text-left" href="#SERVIÇOS">SERVIÇOS</a>
+						<a class="text-left" href="#SERVIÇOS">Serviços</a>
 					</li>
 					<li class="mb-3 d-flex">
-						<a class="text-left" href="#DEPOIMENTOS">DEPOIMENTOS</a>
+						<a class="text-left" href="#DEPOIMENTOS">Depoimentos</a>
 					</li>
 					<li class="mb-3 d-flex">
-						<a class="text-left" href="#PLANOS">PLANOS</a>
+						<a class="text-left" href="#PLANOS">Planos</a>
 					</li>
 					<li class="mb-3 d-flex">
-						<a class="text-left" href="#SAIBAMAIS">SAIBA MAIS</a>
+						<a class="text-left" href="#SAIBAMAIS">Saiba Mais</a>
 					</li>
 					<li class="mb-3 d-flex">
-						<a class="text-left" href="<?php echo home_url(); ?>/login">PORTAL DE TELEMEDICINA</a>
+						<a class="text-left"  href="<?= home_url(); ?>/quem-somos">Quem Somos</a>
+					</li>
+					<li class="mb-3 d-flex">
+						<a class="text-left" href="<?php echo home_url(); ?>/login">Login</a>
 					</li>
 					<li class="mb-3 d-flex w-100 justify-content-center">
 						<p id="logo" class="h1" itemscope itemtype="https://schema.org/Organization">
