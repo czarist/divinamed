@@ -1,3 +1,5 @@
+<?php $page_id = get_the_ID() ?>
+
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 
@@ -63,12 +65,11 @@
 				<img id="open-menu" class="d-flex d-xl-none burguer" src="<?php echo get_template_directory_uri(); ?>/library/images/burguer.svg" alt="open-menu">
 				<img id="close-menu" class="d-none close_it" src="<?php echo get_template_directory_uri(); ?>/library/images/close.svg" alt="open-menu">
 				<p id="logo" class="h1 d-none d-xl-block" itemscope itemtype="https://schema.org/Organization">
-					<a href="#container" rel="nofollow">
+					<a href="<?= $page_id == 5 ? "#container" : home_url() . "#container" ?>" rel="nofollow">
 						<img id="imgLogo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo.svg" alt="logo">
 					</a>
 				</p>
 				<nav role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-					<?php $page_id = get_the_ID() ?>
 					<ul class="d-lg-flex d-none justify-content-between align-items-center m-0">
 						<li class="mr-5 d-none d-xl-block">
 							<a class="mb-0" href="<?= $page_id == 5 ? "#TELEMEDICINA" : home_url() . "#TELEMEDICINA" ?>">Telemediciona</a>
