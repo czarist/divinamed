@@ -48,7 +48,7 @@ body a {
     position: absolute;
     left: 8px;
     width: 16px;
-    background-image: linear-gradient(#7065E5, #2AD3E8);
+    background-image: linear-gradient(#E0922E, #EDC42F);
     animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
 
@@ -121,7 +121,7 @@ div#loadContent {
 }
 
 .faixa_plano {
-    background-image: linear-gradient(#7065E5, #2AD3E8);
+    background-image: linear-gradient(#E0922E, #EDC42F);
     text-align: center;
     text-transform: uppercase;
     color: white;
@@ -164,7 +164,7 @@ section#SAIBAMAIS {
     border-radius: 50px;
     border: transparent;
     margin-top: 2pc;
-    background-image: linear-gradient(#7065E5, #2AD3E8);
+    background-image: linear-gradient(#E0922E, #EDC42F);
     color: white;
     text-transform: uppercase;
 }
@@ -219,7 +219,7 @@ section#PLANOS {
     justify-content: center;
     align-items: flex-start;
     box-shadow: 0px 5px 5px 0px #00000033;
-    background-image: linear-gradient(#7065e594, #2ad3e885);
+    background-color: white;
 }
 
 audio,
@@ -356,7 +356,7 @@ h6 {
 }
 
 a.queromais {
-    background-image: linear-gradient(#7065E5, #2AD3E8);
+    background-image: linear-gradient(#E0922E, #EDC42F);
     padding: 15px;
     border-radius: 15px;
     text-transform: uppercase;
@@ -1394,7 +1394,7 @@ nav#menu-mobile a {
 }
 
 #header a {
-    color: #7065E5;
+    color: #233D69;
 }
 
 
@@ -2233,7 +2233,7 @@ a.icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(#7065E5, #2AD3E8);
+    background-image: linear-gradient(#E0922E, #EDC42F);
     border-radius: 8px;
     margin-left: 5px;
     margin-right: 5px;
@@ -2255,7 +2255,7 @@ a.icon:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(#7065E5, #2AD3E8);
+    background-image: linear-gradient(#E0922E, #EDC42F);
     border-radius: 100%;
     width: 150px !important;
     height: 150px !important;

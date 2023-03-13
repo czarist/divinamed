@@ -42,7 +42,7 @@ $image = get_the_post_thumbnail_url(get_the_ID(), 'full');
 										?>
 												<div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-12 col-xl-4 text-center mt-5 d-flex justify-content-center align-items-center">
 													<div class="servico-box">
-														<div class="d-flex">
+														<div class="d-flex fx-center">
 															<img src="<?= $icon_servico ?>" alt="<?= $titulo_servico ?>">
 														</div>
 														<h6><b><?= $titulo_servico ?></b></h6>
@@ -56,7 +56,7 @@ $image = get_the_post_thumbnail_url(get_the_ID(), 'full');
 									</div>
 
 								</div>
-								<div class="mt-5 pt-5 pb-5" style="background-image: linear-gradient(#7065e594, #2ad3e885);">
+								<div class="mt-5 pt-5 pb-5">
 									<div class="row ">
 										<div class="col-12 mt-5">
 											<div class="row">
@@ -72,10 +72,10 @@ $image = get_the_post_thumbnail_url(get_the_ID(), 'full');
 										</div>
 									</div>
 								</div>
-								<div id="TELEMEDICINA" class="row mw-100 ml-0 mr-0 items-container" style="background: #FCFCFC;">
+								<div id="TELEMEDICINA" class="row mw-100 ml-0 mr-0 items-container" style="background: #233D69;">
 									<div class="col-12 col-xl-6 d-flex justify-content-center align-items-center">
 										<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="row justify-content-start">
-											<div class="col-12 text-white ">
+											<div class="col-12 text-white ml-5">
 												<?= get_field('texto_itens', 5) ?>
 												<?php
 												if (have_rows('itens', 5)) :
@@ -88,8 +88,8 @@ $image = get_the_post_thumbnail_url(get_the_ID(), 'full');
 															<div class="content-icone-item">
 																<img src="<?= $icone_item ?>" alt="<?= $item ?>">
 															</div>
-															<p class="text-dark m-0 d-flex justify-content-center align-items-center">
-																<span><?= $item ?></span>
+															<p class="text-dark m-0 d-flex text-white justify-content-center align-items-center">
+																<span class="text-white"><?= $item ?></span>
 															</p>
 														</div>
 												<?php
@@ -97,8 +97,9 @@ $image = get_the_post_thumbnail_url(get_the_ID(), 'full');
 												endif;
 												?>
 
-												<a href="#SAIBAMAIS" class="queromais mt-5">Quero saber mais</a>
 											</div>
+											<a href="#SAIBAMAIS" class="queromais mt-5 ml-5">Quero saber mais</a>
+
 										</div>
 									</div>
 									<div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-12 col-xl-6 bg-geral position-relative" style="background-image: url('<?= get_field('imagem_secao', 5) ?>'); min-height: 180px;"></div>
@@ -221,7 +222,7 @@ $image = get_the_post_thumbnail_url(get_the_ID(), 'full');
 									</div>
 								</div>
 							</section>
-							<section id="SAIBAMAIS" class="justify-content-center d-flex align-items-center" style="background-image: linear-gradient(#7065e594, #2ad3e885);">
+							<section id="SAIBAMAIS" class="justify-content-center d-flex align-items-center" style="background-image: linear-gradient(#E0922E, #EDC42F);">
 								<div class="container">
 									<div class="row">
 										<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="col-12 bg-white cardsocial p-xl-0 p-5">
